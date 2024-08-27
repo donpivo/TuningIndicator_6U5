@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "6U5_Test01_Display_GC9107"
+		},
+		{
+			"name": "6U5_Test02_Display_GC9107_Clock",
+			"path": "6U5_Test02_Display_GC9107_Clock"
+		},
+		{
+			"name": "6U5_Test03_Display_GC9107_Graph",
+			"path": "6U5_Test03_Display_GC9107_Graph"
+		},
+		{
+			"name": "6U5_Test04_BasicHardware",
+			"path": "6U5_Test04_BasicHardware"
+		}
+	],
+	"settings": {}
+}

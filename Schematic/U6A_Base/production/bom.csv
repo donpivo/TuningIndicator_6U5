@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,CP_Radial_D8.0mm_P3.50mm_H21mm,1,1000µF 16V,
+"D1, D2",D_SOD-323_HandSoldering,2,1N5819WS,
+F1,1206,1,T1A,
+FB1,0805,1,330Ω@100MHz,
+J1,U6A_Base,1,U6A Base,
+J2,PinSocket_1x03_P2.54mm_Vertical,1,Pin header,
