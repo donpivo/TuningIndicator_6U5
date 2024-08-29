@@ -7,9 +7,9 @@
 #define PIN_RES PB2
 // PIN_SCL A5
 // PIN_SDA A7
-#define GREEN_BRIGHT RGB565(0, 255, 50)
-#define GREEN_MEDIUM RGB565(0, 180, 40)
-#define GREEN_DARK RGB565(0, 80, 25)
+#define GREEN_BRIGHT RGB565(0, 255, 80)
+#define GREEN_MEDIUM RGB565(0, 180, 60)
+#define GREEN_DARK RGB565(0, 80, 35)
 #define CENTER_X 62
 #define CENTER_Y 74
 #define OUTER_RADIUS 52
@@ -64,13 +64,13 @@ void setup(void)
 void loop()
 {
   //Fade in
-  if((fadeInCounter<BRIGHTNESS)&&(millis()-fadeInLastChange)>(85-(fadeInCounter/4)))
+  if((fadeInCounter<BRIGHTNESS)&&(millis()-fadeInLastChange)>(120-(fadeInCounter/4)))
   {
     fadeInCounter++;
     analogWrite(PIN_BACKLIGHT, fadeInCounter*fadeInCounter);
     fadeInLastChange=millis();
   }
-  //AGC measurement + mapping to display angle
+  //AGC measurement, filtering and mapping to display angle
   uint16_t agcRaw=analogRead(PIN_AGC);
   agcFiltered=(9.0*agcFiltered+agcRaw)/10.0;
   uint8_t newHalfAngle=(uint8_t)(((agcFiltered/11)+15.0*log10(1+agcFiltered))/3);
