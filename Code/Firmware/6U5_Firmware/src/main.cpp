@@ -1,5 +1,9 @@
-#include <Arduino.h>
-#include <Arduino_GFX_Library.h>
+/*
+6U5 Digital Replica by retronics.no
+*/
+
+#include <Arduino.h> 
+#include <Arduino_GFX_Library.h> //https://github.com/moononournation/Arduino_GFX
 
 #define PIN_BACKLIGHT PB0
 #define PIN_DC PB11 
