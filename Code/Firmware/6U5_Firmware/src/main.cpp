@@ -24,13 +24,9 @@
 Arduino_DataBus *bus = new Arduino_HWSPI(PIN_DC, PIN_CS);
 Arduino_GFX *gfx = new Arduino_GC9107(bus, PIN_RES, 0 /* rotation */, true /* IPS */);
 HardwareSerial uart2(PA3, PA2);
-
 uint8_t oldHalfAngle;
 uint32_t lastDisplayUpdate=millis();
 double agcFiltered;
-
-bool lastDirectionWasUp;
-uint16_t changes;
 uint32_t lastDirectionChange=millis();
 uint8_t fadeInCounter=0;
 uint32_t fadeInLastChange=millis();
@@ -90,7 +86,6 @@ void loop()
     }
     drawLine(315+newHalfAngle,GREEN_BRIGHT);
     drawLine(405-newHalfAngle,GREEN_BRIGHT);
-    lastDirectionWasUp=true;
   }
   else if(newHalfAngle<oldHalfAngle)
   {
@@ -101,7 +96,6 @@ void loop()
     }
     drawLine(315+newHalfAngle,GREEN_BRIGHT);
     drawLine(405-newHalfAngle,GREEN_BRIGHT);
-    lastDirectionWasUp=false;
   }
   oldHalfAngle=newHalfAngle;
 }
