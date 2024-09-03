@@ -199,7 +199,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/019d8b0d-e4b2-4597-8acf-e798d60c0e36")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -412,7 +412,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f4ccc020-6bcd-4fae-b9fe-0ab95cabb8e3")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -555,6 +555,197 @@
 			)
 		)
 	)
+	(footprint "Retronics_Hardware:EMI_Shield_MS207-10S"
+		(layer "F.Cu")
+		(uuid "37f35631-c57e-4998-8afd-f4816cf80df7")
+		(at 155.7 59.75 -90)
+		(property "Reference" "J2"
+			(at -0.000001 -0.5 -90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "94c97aac-cdba-46b0-b769-69ba6ccef021")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "EMI Shield"
+			(at 0 1.000001 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "aaea27f7-8c1a-4406-93c1-9181f5c3ccd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Retronics_Hardware:EMI_Shield_MS207-10S"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c11f190-e657-4843-a7af-279521433825")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08b0ab06-f2a2-4448-bc0d-e18d163ee66f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a88e94aa-df71-4bfb-88f8-20c875ab7e56")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Comments" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f867ebd9-5621-49a2-b938-63a68097a7e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/29b0c400-eeea-44ae-95e1-daceca1fc197")
+		(sheetname "Root")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 20.7 14.8)
+			(end 0.000001 14.800001)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "34022989-18eb-446c-8cfc-e72a856a4378")
+		)
+		(fp_line
+			(start 0.000001 12.199999)
+			(end 0 -0.8)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "a5f961b6-f9c6-4077-8650-aa203cda6187")
+		)
+		(fp_line
+			(start 20.800001 -0.8)
+			(end 20.8 12.2)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "63475923-54dc-41ca-a6be-06450d17a1cf")
+		)
+		(fp_line
+			(start 0 -3.4)
+			(end 20.7 -3.4)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "5b603369-b7ac-4a54-81bc-e2905da088f8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "b33e92ce-073d-4504-82a4-9e9272045253")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.2 13.5)
+			(size 2.286 1.524)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 1 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "2e265d04-5d30-4c22-9168-d823b02ebf4c")
+		)
+		(pad "1" smd roundrect
+			(at -0.199999 -2.1)
+			(size 2.286 1.524)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 1 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "6a2d7467-0021-4219-a7a1-5f72da872eda")
+		)
+		(pad "1" smd roundrect
+			(at 20.899999 -2.1)
+			(size 2.286 1.524)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 1 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "308518f6-766c-447c-88b8-439a92bd1e6e")
+		)
+		(pad "1" smd roundrect
+			(at 20.9 13.5)
+			(size 2.286 1.524)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 1 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(thermal_bridge_angle 45)
+			(uuid "76c0a279-1870-45c8-afe9-1ccf8076fb51")
+		)
+		(model ":KICAD6_3RD_PARTY:Retronics_Hardware.3dshapes/MS207-10S.stp"
+			(offset
+				(xyz 10.4 -5.7 5.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
+	)
 	(footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "47da1d63-30e5-47c0-81d5-6b00874449e2")
@@ -638,7 +829,7 @@
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
 		(path "/f51a9fc1-b2c3-4c11-8b0c-ed3167b810ef")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.171267 -0.51)
@@ -861,7 +1052,7 @@
 		(property ki_fp_filters "SOT?223*TabPin2*")
 		(path "/114fd7de-5502-48a9-b43c-da9ff9e61e3e")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.85 3.41)
@@ -1122,7 +1313,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/12282ebd-b078-42d9-878a-f6b90bb4a438")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -1335,7 +1526,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6b9fbe22-3c4a-46ad-a30b-9582c97beb92")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -1561,7 +1752,7 @@
 		(property ki_fp_filters "Crystal*")
 		(path "/c6452f52-7479-4f66-8412-f128be482ca0")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2 -1.65)
@@ -1801,7 +1992,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/e2f29ecd-83f2-4b2b-b8c5-70841a34da50")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 5.05 3.325)
@@ -2100,7 +2291,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/864aebbe-cb59-4e1a-bd9a-804887012dd3")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -2326,7 +2517,7 @@
 		(property ki_fp_filters "LQFP*7x7mm*P0.5mm*")
 		(path "/0ef466a1-9f85-4dd7-9a2c-aa3137901170")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3.61 -3.61)
@@ -2818,7 +3009,7 @@
 			(roundrect_rratio 0.25)
 			(net 48 "unconnected-(U2-PA0_ADC0_PWM-Pad10)")
 			(pinfunction "PA0_ADC0_PWM")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "40dcd169-a728-4606-a12b-77208665d3ad")
 		)
 		(pad "11" smd roundrect
@@ -2828,7 +3019,7 @@
 			(roundrect_rratio 0.25)
 			(net 49 "unconnected-(U2-PA1_ADC1_PWM-Pad11)")
 			(pinfunction "PA1_ADC1_PWM")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "185ab08f-9cfa-431e-9fdc-e8126c529c79")
 		)
 		(pad "12" smd roundrect
@@ -3283,7 +3474,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/574a3fd1-d8cf-475f-b1fc-f637014e4c72")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -3496,7 +3687,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/830fb4b2-365e-4b3d-bdf3-c12a6db8cba5")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 0.51)
@@ -3709,7 +3900,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/2b6e8b01-ff54-4a3a-9be1-38e115e67853")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -3922,7 +4113,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/67574400-ae6b-4f91-a28b-3b1d16a7db3e")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 0.51)
@@ -4132,7 +4323,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/790d3778-46f5-453e-8cb3-3f2b5bec222c")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -4364,7 +4555,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f212515d-9557-4b98-991b-8d31051da4bd")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.254724 0.5225)
@@ -4580,7 +4771,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/cedf984b-9569-4b4f-bed9-28eb3ec49630")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.254724 0.5225)
@@ -5091,7 +5282,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/2871bfd9-6217-4498-8a32-d6505b6e5970")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.254724 -0.5225)
@@ -5307,7 +5498,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/32e72abe-1902-4b10-b95d-2603be2dc145")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.146267 -0.51)
@@ -5540,7 +5731,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/fe333efc-dc49-4c1c-8e4d-175058883fe1")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.65 1.56)
@@ -5826,7 +6017,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/0edc7756-7499-4e5d-ad6b-51ea0cb07f96")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -5.35 -1.655)
@@ -6331,7 +6522,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/c4f57c15-4ba4-4209-9144-43e0cd64dea2")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.8 1.56)
@@ -6620,7 +6811,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/89e21a2f-2c0b-4aa6-86bc-13e068feaff8")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.254724 -0.5225)
@@ -6852,7 +7043,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/03977866-2220-4e0d-92c8-c09009c01a3b")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.27 1.27)
@@ -7098,7 +7289,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/bac3de77-8a04-456f-9d87-3ff17e175eb8")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.254724 -0.5225)
@@ -7314,7 +7505,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f2087edd-17be-4660-b7df-0938a6b06723")
 		(sheetname "Root")
-		(sheetfile "U6A_MCU_Board.kicad_sch")
+		(sheetfile "6U5_MCU_Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.146267 -0.51)

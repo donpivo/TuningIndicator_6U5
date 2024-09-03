@@ -19,7 +19,7 @@
 #define OUTER_RADIUS 52
 #define INNER_RADIUS 24
 #define PIN_AGC PB1
-#define BRIGHTNESS 120 // Max 255
+#define BRIGHTNESS 255 // Max 255
 
 Arduino_DataBus *bus = new Arduino_HWSPI(PIN_DC, PIN_CS);
 Arduino_GFX *gfx = new Arduino_GC9107(bus, PIN_RES, 0 /* rotation */, true /* IPS */);

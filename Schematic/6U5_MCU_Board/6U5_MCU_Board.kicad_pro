@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
+          "drill": 0.0,
           "height": 1.524,
-          "width": 1.524
+          "width": 2.286
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "U6A_MCU_Board.kicad_pro",
+    "filename": "6U5_MCU_Board.kicad_pro",
     "version": 1
   },
   "net_settings": {
