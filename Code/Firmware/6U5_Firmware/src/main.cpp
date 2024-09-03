@@ -3,7 +3,7 @@
 */
 
 #include <Arduino.h> 
-#include <Arduino_GFX_Library.h> //https://github.com/moononournation/Arduino_GFX
+#include <Arduino_GFX_Library.h> //https://github.com/moononournation/Arduino_GFX | GFX Library for Arduino@^1.4.7
 
 #define PIN_BACKLIGHT PB0
 #define PIN_DC PB11 
