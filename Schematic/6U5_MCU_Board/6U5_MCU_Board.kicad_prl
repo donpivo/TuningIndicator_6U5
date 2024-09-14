@@ -65,7 +65,7 @@
       40
     ],
     "visible_layers": "ffcffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "repo_password": "",
@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "U6A_MCU_Board.kicad_prl",
+    "filename": "6U5_MCU_Board.kicad_prl",
     "version": 3
   },
   "project": {
