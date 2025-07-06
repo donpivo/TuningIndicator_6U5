@@ -14,15 +14,15 @@
 #define GREEN_BRIGHT RGB565(0, 255, 80)
 #define GREEN_MEDIUM RGB565(0, 180, 60)
 #define GREEN_DARK RGB565(0, 80, 35)
-#define CENTER_X 62
-#define CENTER_Y 74
+#define CENTER_X 63
+#define CENTER_Y 75
 #define OUTER_RADIUS 52
 #define INNER_RADIUS 24
 #define PIN_AGC PB1
 #define BRIGHTNESS 255 // Max 255
 
 Arduino_DataBus *bus = new Arduino_HWSPI(PIN_DC, PIN_CS);
-Arduino_GFX *gfx = new Arduino_GC9107(bus, PIN_RES, 0 /* rotation */, true /* IPS */);
+Arduino_GFX *gfx = new Arduino_GC9107(bus, PIN_RES, 0 /* rotation */, true /* IPS */, GC9107_TFTWIDTH, GC9107_TFTHEIGHT, 0, 0, 0, 0);
 HardwareSerial uart2(PA3, PA2);
 uint8_t oldHalfAngle;
 uint32_t lastDisplayUpdate=millis();
